@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive; /* Handwriting font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('https://images.squarespace-cdn.com/content/v1/5fdfeb249d00c472c28c8e82/1683943561139-VUVML1G2TTEDWMVSDE6E/DSC05170.jpg') no-repeat center center fixed; /* Set your background image */
+    background-size: cover;
+    transition: background 0.5s, color 0.5s;
+}
+
+nav {
+    background: rgba(51, 51, 51, 0.8); /* Semi-transparent */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.cta-button {
+    background: #f0a500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #d08b00;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.services {
+    background: #f9f9f9;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service i {
+    font-size: 2em;
+    color: #f0a500; /* Icon color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+.social-icon {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.x-logo {
+    width: 30px; /* Adjust the size of the X logo */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.social-icon:hover {
+    color: #f0a500; /* Change color on hover */
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: #fff;
+}
+
+body.night-mode nav {
+    background: rgba(51, 51, 51, 0.9);
+}
+
+body.night-mode .service {
+    background: #444; /* Darker service boxes */
+}
+
+body.night-mode footer {
+    background: #222; /* Darker footer */
+}
